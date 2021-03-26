@@ -1,6 +1,7 @@
 # Time series analysis on a laparoscopic surgical robot  
 ## Datasets  
 This datasets are extracted from IRAS trajectory replay data. To use this dataset, please cite:  
+  
 __T. Yang, W. Huang, C. K. Chui, Z. Jiang and L. Jiang, "Stacked hidden Markov model for motion intention recognition," 2017 IEEE 2nd International Conference on Signal and Image Processing (ICSIP), Singapore, 2017, pp. 266-271, doi: 10.1109/SIPROCESS.2017.812454__  
 
 The extracted datasets includes both 120 groups and 180 groups. 120 (initial preparation groups excluded) and 180 groups (initial preparation groups included) are extracted from .MAT file.
