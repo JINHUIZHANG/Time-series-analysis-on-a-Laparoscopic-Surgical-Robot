@@ -9,7 +9,7 @@ cd $PBS_O_WORKDIR;
 np=$(cat ${PBS_NODEFILE} | wc -1);
 singularity exec /app1/common/singularity-img/3.0.0/tensorflow_2.0.0_cuda10.0-cudnn7-devel-ubuntu18.04-py36.simg bash << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
 
-python main_27July_HPC.py
+python prediction_LSTM.py
 
 EOF
 
