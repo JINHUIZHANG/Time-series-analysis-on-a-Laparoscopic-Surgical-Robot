@@ -1,8 +1,12 @@
 ## Deployment
-To access NUS High Performance Computing (HPC), please refer to "Introduction of using HPC for Deep Learning on Windows.pdf" and "submission_example.pbs".
+To access NUS High Performance Computing (HPC), please refer to "Introduction of using HPC for Deep Learning on Windows.pdf".  
+
+Submission Example:"submission_example.pbs".  
 
 ## Datasets  
-This datasets are extracted from IRAS trajectory replay data. To use this dataset, please cite "T. Yang, W. Huang, C. K. Chui, Z. Jiang and L. Jiang, "Stacked hidden Markov model for motion intention recognition," 2017 IEEE 2nd International Conference on Signal and Image Processing (ICSIP), Singapore, 2017, pp. 266-271, doi: 10.1109/SIPROCESS.2017.8124546."     
+This datasets are extracted from IRAS trajectory replay data. To use this dataset, please cite  
+"T. Yang, W. Huang, C. K. Chui, Z. Jiang and L. Jiang, "Stacked hidden Markov model for motion intention recognition," 2017 IEEE 2nd International Conference on Signal and Image Processing (ICSIP), Singapore, 2017, pp. 266-271, doi: 10.1109/SIPROCESS.2017.8124546."  
+
 The extracted datasets includes both 120 groups and 180 groups. 120 (initial preparation groups excluded) and 180 groups (initial preparation groups included) are extracted from .MAT file.
 For 120 and 180 groups, both Cartisian and Spherical coordinate systems are included.
 For Cartisian, the columns are as follows: Time stamp, X_left, Y_left, Z_left, Roll_left, Handle_left, X_right, Y_right, Z_right, Roll_right, Handle_right, tool_ID;  
@@ -58,12 +62,12 @@ Output: "data_norm_160.mat"
 
 ## Classification
 Run "classification_LSTM.m"  
-Input: "data_norm.mat"
-Result  
+Input: "data_norm.mat"  
+#### Sample Result  
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Classification/classification_lstm.png)
 
 ## Prediction
 Run "prediction_LSTM.py"  
 Input: "data_norm_160.mat"  
-Result  
+#### Sample Result  
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
