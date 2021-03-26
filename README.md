@@ -46,11 +46,11 @@ Run: ___clean.m___    Input: __data_filter_180.mat__    Output: __data_clean_160
 #### Normalization
 Run: ___normalization.m___    Input: __data_clean_160.mat__    Output: __data_norm_160.mat__  
 ## Classification
-Run: ___classification_LSTM.m___    Input: __data_norm.mat__  
+Run: ___classification_LSTM.m___      Input: __data_norm.mat__  
 Sample Result:    
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Classification/classification_lstm.png)
 ## Prediction
-Run: ___prediction_LSTM.py___    Input: __data_norm_160.mat__  
+Run: ___prediction_LSTM.py___      Input: __data_norm_160.mat__  
 Sample Result:    
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
 ## Deployment
