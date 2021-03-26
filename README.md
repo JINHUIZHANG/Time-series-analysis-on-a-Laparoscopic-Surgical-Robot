@@ -1,4 +1,5 @@
 # Time series analysis on a laparoscopic surgical robot  
+
 ## Datasets  
 This datasets are extracted from IRAS trajectory replay data. To use this dataset, please cite:  
   
@@ -11,11 +12,9 @@ For Spherical, the columns are as follows: Time stamp, Pitch_left, Yaw_left, Rol
 Run ___extract_data.m___ to extract both 120 groups and 180 groups of raw datasets.
 
 ## Plots  
-
 The plot results consist of both Cartisian and Spherical. Cartisian_3dPlot includes X-Y-Z 3D-trajectory plots.   
 #### Cartisian  
-Run ___PlotAllCartisianParameter.m___  
-The plots results are as follows:  
+Run ___PlotAllCartisianParameter.m___, the plots results are as follows:  
 (2,5,1): X_left-timestamp;  
 (2,5,2): Y_left-timestamp;   
 (2,5,3): Z_left-timestamp;   
@@ -27,8 +26,7 @@ The plots results are as follows:
 (2,5,9): Roll_right-timestamp;   
 (2,5,10): Handle_right-timestamp;   
 #### Spherical  
-Run ___PlotAllSphericalParameter.m___  
-The plots results are as follows:  
+Run ___PlotAllSphericalParameter.m___, the plots results are as follows:  
 (2,5,1): Pitch_left-timestamp;   
 (2,5,2): Yaw_left-timestamp;   
 (2,5,3): Roll_left-timestamp;   
@@ -39,38 +37,24 @@ The plots results are as follows:
 (2,5,8): Roll_right-timestamp;   
 (2,5,9): Depth_right-timestamp;   
 (2,5,10): Handle_right-timestamp;
-
 ## Preprocessing 
 Based on 180 groups of raw datasets, the preprocessings are resampling, filtering, clean, and normalization.  
 #### Resampling
-Run ___resampling.m___  
-Input: ___data_raw_180.mat___  
-Output: ___data_resample_180.mat___  
+Run: ___resampling.m___  Input: __data_raw_180.mat__  Output: __data_resample_180.mat__  
 #### Filtering
-Run ___lowpassfilterV2.m___  
-Input: ___data_resample_180.mat___  
-Output: ___data_filter_180.mat___  
+Run: ___lowpassfilterV2.m___  Input: __data_resample_180.mat__  Output: __data_filter_180.mat__  
 #### Clean
-Run ___clean.m___  
-Input: ___data_filter_180.mat___  
-Output: ___data_clean_160.mat___  
+Run: ___clean.m___  Input: __data_filter_180.mat__  Output: __data_clean_160.mat__  
 #### Normalization
-Run ___normalization.m___  
-Input: ___data_clean_160.mat___  
-Output: ___data_norm_160.mat___  
-
+Run: ___normalization.m___  Input: __data_clean_160.mat__  Output: __data_norm_160.mat__  
 ## Classification
-Run ___classification_LSTM.m___  
-Input: ___data_norm.mat___  
-Sample Result:    
+Run: ___classification_LSTM.m___  Input: __data_norm.mat__  Sample Result:    
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Classification/classification_lstm.png)
 
 ## Prediction
-Run ___prediction_LSTM.py___  
-Input: ___data_norm_160.mat___  
-Sample Result:    
+Run: ___prediction_LSTM.py___  Input: __data_norm_160.mat__  Sample Result:    
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
 
 ## Deployment
-To access NUS High Performance Computing (HPC), please refer to "Introduction of using HPC for Deep Learning on Windows.pdf".  
+To access NUS High Performance Computing (HPC), please refer to __Introduction of using HPC for Deep Learning on Windows.pdf__
 Submission Example: ___submission_example.pbs___
