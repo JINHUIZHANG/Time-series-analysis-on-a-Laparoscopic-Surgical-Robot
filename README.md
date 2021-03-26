@@ -1,6 +1,5 @@
-## NUS HPC
-To access NUS High Performance Computing, please refer to "Introduction of using HPC for Deep Learning on Windows.pdf" and "submission_example.pbs".
-
+## Deployment
+To access NUS High Performance Computing (HPC), please refer to "Introduction of using HPC for Deep Learning on Windows.pdf" and "submission_example.pbs".
 
 ## Raw Datasets  
 Raw datasets includes 120 and 180. 120 (initial preparation groups excluded) and 180 groups (initial preparation groups included) are extracted from .MAT file.
@@ -37,7 +36,11 @@ For Spherical, the plots results are as follows:
 (2,5,10): Handle_right-timestamp;
 
 ## Preprocessing 
-Based on 180 groups of raw datasets, the preprocessings are resampling, filtering, cleaning, and normalization. Finally, "data_norm_160.mat" are adopted for further experiments.
+Based on 180 groups of raw datasets, the preprocessings are resampling, filtering, clean, and normalization. Finally, "data_norm_160.mat" are adopted for further experiments.
 
-Pipeline: "data_raw_180.mat"->"data_resample_180.mat"->"data_filter_180.mat"->"data_clean_160.mat"->"data_norm_160.mat" 
+Pipeline:   
+Resampling: "data_raw_180.mat"->"data_resample_180.mat"  
+Filtering: "data_resample_180.mat"->"data_filter_180.mat"  
+Clean: "data_filter_180.mat"->"data_clean_160.mat"  
+Normalization: "data_clean_160.mat"->"data_norm_160.mat" 
   
