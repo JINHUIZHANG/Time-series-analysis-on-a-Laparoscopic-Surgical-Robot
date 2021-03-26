@@ -1,0 +1,28 @@
+depth? Pitch? Yaw?
+
+data cleaning: 115 110 106 97 78 74 73 71 14 12?
+
+2 experts & 8 novices?
+
+Roll and Handle are decent.
+
+115 too much >
+113 too much 
+110 missing <
+106 missing <
+104 Left-X-Y-Z
+97 little <
+92 Left-X-Y-Z
+90 Right-X-Y-Z
+80 Left-X-Y-Z
+78 too much >
+75 little
+74 much >
+73 much >
+71 much >
+45 little(break)
+39 little(break)
+16 little(break)
+14 little(break) <
+12 little(break) <
+11 little(break)
