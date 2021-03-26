@@ -54,5 +54,5 @@ Run: ___prediction_LSTM.py___      Input: __data_norm_160.mat__
 Sample Result:    
 ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
 ## Deployment
-To access NUS High Performance Computing (HPC), please refer to __Introduction of using HPC for Deep Learning on Windows.pdf__
+To access NUS High Performance Computing (HPC), please refer to __Introduction of using HPC for Deep Learning on Windows.pdf__  
 Submission Example: ___submission_example.pbs___
