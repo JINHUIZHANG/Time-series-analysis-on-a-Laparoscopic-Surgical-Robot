@@ -59,9 +59,11 @@ Output: "data_norm_160.mat"
 ## Classification
 Run "classification_LSTM.m"  
 Input: "data_norm.mat"
-Result: ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Classification/classification_lstm.png)
+Result  
+![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Classification/classification_lstm.png)
 
 ## Prediction
 Run "prediction_LSTM.py"  
 Input: "data_norm_160.mat"  
-Result: ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
+Result  
+![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
