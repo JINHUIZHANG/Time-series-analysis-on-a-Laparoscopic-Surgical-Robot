@@ -40,22 +40,28 @@ For Spherical, the plots results are as follows:
 Based on 180 groups of raw datasets, the preprocessings are resampling, filtering, clean, and normalization. Finally, "data_norm_160.mat" are adopted for further experiments.
    
 ### Resampling
-Run "resampling.m"
-Input: "data_raw_180.mat"
-Output: "data_resample_180.mat"
+Run "resampling.m"  
+Input: "data_raw_180.mat"  
+Output: "data_resample_180.mat"  
 ### Filtering
-Run "lowpassfilterV2.m"
-Input: "data_resample_180.mat"
-Output: "data_filter_180.mat"
+Run "lowpassfilterV2.m"  
+Input: "data_resample_180.mat"  
+Output: "data_filter_180.mat"  
 ### Clean
-Run "clean.m"
-Input: "data_filter_180.mat"
-Output: "data_clean_160.mat"
+Run "clean.m"  
+Input: "data_filter_180.mat"  
+Output: "data_clean_160.mat"  
 ### Normalization
-Run "normalization.m"
-Input: "data_clean_160.mat"
-Output: "data_norm_160.mat"
+Run "normalization.m"  
+Input: "data_clean_160.mat"  
+Output: "data_norm_160.mat"  
 
 ## Classification
+Run "classification_LSTM.m"  
+Input: "data_norm.mat"
+Result: ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Classification/classification_lstm.png)
 
 ## Prediction
+Run "prediction_LSTM.py"  
+Input: "data_norm_160.mat"  
+Result: ![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Prediction/prediction_train_validation_loss_lstm.PNG)
