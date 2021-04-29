@@ -35,6 +35,9 @@ Run ___PlotAllSphericalParameter.m___, the plots results are as follows:
 (2,5,8): Roll_right-timestamp;   
 (2,5,9): Depth_right-timestamp;   
 (2,5,10): Handle_right-timestamp;
+## Pipeline
+![alt text](https://github.com/JINHUIZHANG/Time-series-analysis-on-a-Laparoscopic-Surgical-Robot/blob/main/Deployment/Pipeline.png)
+
 ## Preprocessing 
 Based on 180 groups of raw datasets, the preprocessings are resampling, filtering, clean, and normalization.  
 #### Resampling  
